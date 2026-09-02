@@ -1,0 +1,17 @@
+../FR5 Robot/RobotCommand.c:37:12:replyErrcode	2
+../FR5 Robot/RobotCommand.c:47:20:robotErrcodeHint	7
+../FR5 Robot/RobotCommand.c:62:5:connectRobot	8
+../FR5 Robot/RobotCommand.c:121:6:disconnectRobot	2
+../FR5 Robot/RobotCommand.c:146:6:buildFrame	1
+../FR5 Robot/RobotCommand.c:153:5:getStatusIndex	5
+../FR5 Robot/RobotCommand.c:172:13:drainRobotSocket	4
+../FR5 Robot/RobotCommand.c:188:5:sendCommand	9
+../FR5 Robot/RobotCommand.c:238:5:robotInitConfig	5
+../FR5 Robot/RobotCommand.c:278:5:waitTillMotionComplete	9
+../FR5 Robot/RobotCommand.c:330:12:robotMoveJBody	4
+../FR5 Robot/RobotCommand.c:359:5:robotMoveJStr	1
+../FR5 Robot/RobotCommand.c:366:5:moveRobotTo	2
+../FR5 Robot/RobotCommand.c:389:6:robotLinearMoveConsole	2
+../FR5 Robot/RobotCommand.c:410:6:testRobotVersion	3
+../FR5 Robot/RobotCommand.c:419:6:testRobotMode	2
+../FR5 Robot/RobotCommand.c:427:6:testRobotAlarm	2

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($c = Get-Command arm-none-eabi-gcc -ErrorAction SilentlyContinue; if \\($c\\) { $c.Source } else { \"arm-none-eabi-gcc not found\" }; $g = Get-Command gcc -ErrorAction SilentlyContinue; if \\($g\\) { $g.Source } else { \"gcc not found\" })",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\ESE\\\\Documents\\\\Line7\\\\Line7\\\\Line7_peptide\\\\FR5 Robot\\\\RobotMotion.c\" | Measure-Object -Line\\).Lines)",
+      "PowerShell($f = \"C:\\\\Users\\\\ESE\\\\Documents\\\\Line7\\\\Line7\\\\Line7_peptide\\\\FR5 Robot\\\\RobotMotion.c\"; \"Total lines: \" + \\(Get-Content $f\\).Count)",
+      "Bash(sed -n '617,689p' stepper.c)",
+      "Read(//tmp/**)",
+      "WebFetch(domain:probots.co.in)",
+      "WebSearch",
+      "Bash(command -v arm-none-eabi-gcc)",
+      "Bash(command -v make)",
+      "Bash(ls \"C:/Users/ESE/Documents/Line7/Line7/Line7_peptide/Debug\"/*.mk \"C:/Users/ESE/Documents/Line7/Line7/Line7_peptide/Debug\"/makefile 2>/dev/null; ls /c/ST 2>/dev/null | head)",
+      "Bash(sed -n '/^void   *moveRobotToHomePosition/,/^}/p;/^void moveRobotToHomePosition/,/^}/p' \"FR5 Robot/RobotMotion.c\")",
+      "Bash(sed -n '/^bool   *robotResetToHome/,/^}/p;/^bool robotResetToHome/,/^}/p' \"FR5 Robot/RobotMotion.c\")"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+../Core/Src/freertos.c:135:6:vApplicationGetIdleTaskMemory	1
+../Core/Src/freertos.c:149:6:MX_FREERTOS_Init	1
+../Core/Src/freertos.c:271:6:LAN8742_SW_Reset	6
+../Core/Src/freertos.c:327:6:StartDefaultTask	1
+../Core/Src/freertos.c:360:6:StartAppMainTask	2
+../Core/Src/freertos.c:425:6:ServoRxRingInit	1
+../Core/Src/freertos.c:447:6:ServoRxRingFlush	1
+../Core/Src/freertos.c:457:5:ServoRxRingGet	2
+../Core/Src/freertos.c:481:6:USART6_IRQHandler	4

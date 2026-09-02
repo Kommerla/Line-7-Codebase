@@ -1,0 +1,12 @@
+../Core/Src/fmoc.c:20:13:fmocFlush	16	static
+../Core/Src/fmoc.c:33:12:fmocReadLine	32	static
+../Core/Src/fmoc.c:67:12:fmocSplit	32	static
+../Core/Src/fmoc.c:82:13:fmocFormat	48	static
+../Core/Src/fmoc.c:98:6:FmocRun	408	static
+../Core/Src/fmoc.c:159:6:FmocSendReceive	88	static
+../Core/Src/fmoc.c:220:6:FmocTxTest	40	static
+../Core/Src/fmoc.c:269:22:fmocRxLevelWithPull	40	static
+../Core/Src/fmoc.c:285:6:FmocRxDriveTest	32	static
+../Core/Src/fmoc.c:327:13:fmocSetBaud	16	static
+../Core/Src/fmoc.c:345:6:FmocBaudScan	32	static
+../Core/Src/fmoc.c:409:6:FmocMonitor	16	static
