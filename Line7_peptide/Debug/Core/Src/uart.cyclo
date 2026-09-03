@@ -1,0 +1,5 @@
+../Core/Src/uart.c:32:13:consoleTx	1
+../Core/Src/uart.c:37:6:UART_Print	1
+../Core/Src/uart.c:73:13:IsStrayNewlinePair	5
+../Core/Src/uart.c:79:6:UART_ReadLine	12
+../Core/Src/uart.c:130:6:UART_ReadString	6

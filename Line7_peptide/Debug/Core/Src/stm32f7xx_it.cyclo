@@ -1,0 +1,16 @@
+../Core/Src/stm32f7xx_it.c:61:13:faultPutc	2
+../Core/Src/stm32f7xx_it.c:67:13:faultPrint	2
+../Core/Src/stm32f7xx_it.c:74:13:faultPutHex	2
+../Core/Src/stm32f7xx_it.c:83:13:faultKV	1
+../Core/Src/stm32f7xx_it.c:94:6:prvFaultReport	1
+../Core/Src/stm32f7xx_it.c:135:6:NMI_Handler	1
+../Core/Src/stm32f7xx_it.c:151:6:HardFault_Handler	1
+../Core/Src/stm32f7xx_it.c:173:6:MemManage_Handler	1
+../Core/Src/stm32f7xx_it.c:188:6:BusFault_Handler	1
+../Core/Src/stm32f7xx_it.c:203:6:UsageFault_Handler	1
+../Core/Src/stm32f7xx_it.c:218:6:DebugMon_Handler	1
+../Core/Src/stm32f7xx_it.c:238:6:TIM1_UP_TIM10_IRQHandler	1
+../Core/Src/stm32f7xx_it.c:252:6:TIM2_IRQHandler	1
+../Core/Src/stm32f7xx_it.c:266:6:TIM6_DAC_IRQHandler	1
+../Core/Src/stm32f7xx_it.c:280:6:TIM7_IRQHandler	1
+../Core/Src/stm32f7xx_it.c:294:6:ETH_IRQHandler	1
