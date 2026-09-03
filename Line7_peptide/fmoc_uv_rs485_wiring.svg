@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1425 450" width="1425" height="450" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+
+  <defs>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f6feb"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a7f37"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1425" height="450" fill="#ffffff"/>
+
+  <!-- ===== Title ===== -->
+  <text x="712" y="40" text-anchor="middle" font-size="23" font-weight="600" fill="#101418">
+    Fmoc UV Detector &#8212; RS232 &#8594; RS485 &#8594; TTL to STM32 (USART6)
+  </text>
+  <text x="712" y="66" text-anchor="middle" font-size="14" fill="#57606a">
+    19200 baud &#183; 8 data bits &#183; no parity &#183; 1 stop bit &#183; no flow control
+  </text>
+
+  <!-- ================= STM32 ================= -->
+  <rect x="40" y="110" width="250" height="300" rx="10"
+        fill="#eef3fb" stroke="#1f3d5c" stroke-width="2"/>
+  <text x="165" y="145" text-anchor="middle" font-size="17" font-weight="600" fill="#101418">STM32F767ZI</text>
+  <text x="165" y="167" text-anchor="middle" font-size="13" fill="#57606a">USART6</text>
+  <line x1="60" y1="182" x2="270" y2="182" stroke="#c2ccd6" stroke-width="1"/>
+
+  <text x="270" y="211" text-anchor="end" font-size="14" fill="#101418">3.3 V</text>
+  <text x="270" y="261" text-anchor="end" font-size="14" fill="#101418">GND</text>
+  <text x="270" y="321" text-anchor="end" font-size="14" font-weight="600" fill="#101418">PG14  (TX)</text>
+  <text x="270" y="371" text-anchor="end" font-size="14" font-weight="600" fill="#101418">PG9   (RX)</text>
+
+  <circle cx="290" cy="206" r="4" fill="#d1242f"/>
+  <circle cx="290" cy="256" r="4" fill="#57606a"/>
+  <circle cx="290" cy="316" r="4" fill="#1f6feb"/>
+  <circle cx="290" cy="366" r="4" fill="#1a7f37"/>
+
+  <!-- ================= RS485 -> TTL module ================= -->
+  <rect x="405" y="110" width="250" height="300" rx="10"
+        fill="#f3f0fb" stroke="#4c3d7a" stroke-width="2"/>
+  <text x="530" y="145" text-anchor="middle" font-size="17" font-weight="600" fill="#101418">RS485 &#8211; TTL module</text>
+  <text x="530" y="167" text-anchor="middle" font-size="13" fill="#57606a">half duplex transceiver</text>
+  <line x1="425" y1="182" x2="635" y2="182" stroke="#c2ccd6" stroke-width="1"/>
+
+  <!-- TTL side (left edge) -->
+  <text x="425" y="211" font-size="14" fill="#101418">VCC</text>
+  <text x="425" y="261" font-size="14" fill="#101418">GND</text>
+  <text x="425" y="321" font-size="14" font-weight="600" fill="#101418">RXD</text>
+  <text x="425" y="371" font-size="14" font-weight="600" fill="#101418">TXD</text>
+  <text x="425" y="394" font-size="11" fill="#57606a">TTL side (3.3 V)</text>
+
+  <circle cx="405" cy="206" r="4" fill="#d1242f"/>
+  <circle cx="405" cy="256" r="4" fill="#57606a"/>
+  <circle cx="405" cy="316" r="4" fill="#1f6feb"/>
+  <circle cx="405" cy="366" r="4" fill="#1a7f37"/>
+
+  <!-- RS485 side (right edge) -->
+  <text x="635" y="271" text-anchor="end" font-size="14" font-weight="600" fill="#101418">A  (D+)</text>
+  <text x="635" y="321" text-anchor="end" font-size="14" font-weight="600" fill="#101418">B  (D&#8722;)</text>
+  <text x="635" y="371" text-anchor="end" font-size="14" fill="#101418">GND</text>
+  <text x="635" y="394" text-anchor="end" font-size="11" fill="#57606a">RS485 side</text>
+
+  <circle cx="655" cy="266" r="4" fill="#bf6b00"/>
+  <circle cx="655" cy="316" r="4" fill="#8250df"/>
+  <circle cx="655" cy="366" r="4" fill="#57606a"/>
+
+  <!-- ================= Waveshare RS232 -> RS485 ================= -->
+  <rect x="770" y="110" width="250" height="300" rx="10"
+        fill="#fdf3ec" stroke="#8a4b12" stroke-width="2"/>
+  <text x="895" y="145" text-anchor="middle" font-size="17" font-weight="600" fill="#101418">RS232 &#8211; RS485</text>
+  <text x="895" y="167" text-anchor="middle" font-size="13" fill="#57606a">Waveshare converter</text>
+  <line x1="790" y1="182" x2="1000" y2="182" stroke="#c2ccd6" stroke-width="1"/>
+
+  <text x="895" y="212" text-anchor="middle" font-size="12" fill="#57606a">bidirectional, auto direction</text>
+  <text x="895" y="232" text-anchor="middle" font-size="12" fill="#57606a">DC power input</text>
+
+  <!-- RS485 side (left edge) -->
+  <text x="790" y="271" font-size="14" font-weight="600" fill="#101418">A  (D+)</text>
+  <text x="790" y="321" font-size="14" font-weight="600" fill="#101418">B  (D&#8722;)</text>
+  <text x="790" y="371" font-size="14" fill="#101418">GND</text>
+
+  <circle cx="770" cy="266" r="4" fill="#bf6b00"/>
+  <circle cx="770" cy="316" r="4" fill="#8250df"/>
+  <circle cx="770" cy="366" r="4" fill="#57606a"/>
+
+  <!-- RS232 side (right edge) -->
+  <text x="1000" y="271" text-anchor="end" font-size="13" fill="#101418">DB9 pin 3  TX out</text>
+  <text x="1000" y="321" text-anchor="end" font-size="13" fill="#101418">DB9 pin 2  RX in</text>
+  <text x="1000" y="371" text-anchor="end" font-size="13" fill="#101418">DB9 pin 5  GND</text>
+  <text x="1000" y="394" text-anchor="end" font-size="11" fill="#57606a">RS232 side (&#177;12 V)</text>
+
+  <circle cx="1020" cy="266" r="4" fill="#1f6feb"/>
+  <circle cx="1020" cy="316" r="4" fill="#1a7f37"/>
+  <circle cx="1020" cy="366" r="4" fill="#57606a"/>
+
+  <!-- ================= Detector ================= -->
+  <rect x="1135" y="110" width="250" height="300" rx="10"
+        fill="#eefaf1" stroke="#1a5c33" stroke-width="2"/>
+  <text x="1260" y="145" text-anchor="middle" font-size="17" font-weight="600" fill="#101418">Fmoc UV Detector</text>
+  <text x="1260" y="167" text-anchor="middle" font-size="13" fill="#57606a">Vapourtec &#183; DB9 RS232</text>
+  <line x1="1155" y1="182" x2="1365" y2="182" stroke="#c2ccd6" stroke-width="1"/>
+
+  <text x="1260" y="212" text-anchor="middle" font-size="12" fill="#57606a">command in:  &#8220;GA&#8221; + CR LF</text>
+  <text x="1260" y="232" text-anchor="middle" font-size="12" fill="#57606a">reply out:  365AU, 460AU, TEMP</text>
+
+  <text x="1155" y="271" font-size="13" fill="#101418">RX in   (pin 3)</text>
+  <text x="1155" y="321" font-size="13" fill="#101418">TX out  (pin 2)</text>
+  <text x="1155" y="371" font-size="13" fill="#101418">GND     (pin 5)</text>
+
+  <circle cx="1135" cy="266" r="4" fill="#1f6feb"/>
+  <circle cx="1135" cy="316" r="4" fill="#1a7f37"/>
+  <circle cx="1135" cy="366" r="4" fill="#57606a"/>
+
+  <!-- ================= STM32 <-> RS485-TTL (TTL wires) ================= -->
+  <line x1="290" y1="206" x2="405" y2="206" stroke="#d1242f" stroke-width="2.5"/>
+  <text x="347" y="198" text-anchor="middle" font-size="12" fill="#d1242f">3.3 V</text>
+
+  <line x1="290" y1="256" x2="405" y2="256" stroke="#57606a" stroke-width="2.5"/>
+  <text x="347" y="248" text-anchor="middle" font-size="12" fill="#57606a">GND</text>
+
+  <line x1="290" y1="316" x2="405" y2="316" stroke="#1f6feb" stroke-width="2.5"
+        marker-end="url(#arrB)"/>
+  <text x="347" y="308" text-anchor="middle" font-size="12" font-weight="600" fill="#1f6feb">TX &#8594; RXD</text>
+
+  <line x1="405" y1="366" x2="290" y2="366" stroke="#1a7f37" stroke-width="2.5"
+        marker-end="url(#arrG)"/>
+  <text x="347" y="358" text-anchor="middle" font-size="12" font-weight="600" fill="#1a7f37">TXD &#8594; RX</text>
+
+  <!-- ================= RS485 twisted pair ================= -->
+  <rect x="660" y="240" width="105" height="150" rx="6"
+        fill="#fafbfc" stroke="#c2ccd6" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="712" y="258" text-anchor="middle" font-size="11" fill="#57606a">RS485 pair</text>
+
+  <line x1="655" y1="266" x2="770" y2="266" stroke="#bf6b00" stroke-width="2.5"/>
+  <text x="712" y="288" text-anchor="middle" font-size="11" fill="#bf6b00">A &#8212; A</text>
+
+  <line x1="655" y1="316" x2="770" y2="316" stroke="#8250df" stroke-width="2.5"/>
+  <text x="712" y="338" text-anchor="middle" font-size="11" fill="#8250df">B &#8212; B</text>
+
+  <line x1="655" y1="366" x2="770" y2="366" stroke="#57606a" stroke-width="2.5"/>
+  <text x="712" y="385" text-anchor="middle" font-size="11" fill="#57606a">GND</text>
+
+  <!-- ================= RS232 cable ================= -->
+  <rect x="1025" y="240" width="105" height="150" rx="6"
+        fill="#fafbfc" stroke="#c2ccd6" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="1077" y="258" text-anchor="middle" font-size="11" fill="#57606a">RS232 cable</text>
+
+  <line x1="1020" y1="266" x2="1135" y2="266" stroke="#1f6feb" stroke-width="2.5"
+        marker-end="url(#arrB)"/>
+  <line x1="1135" y1="316" x2="1020" y2="316" stroke="#1a7f37" stroke-width="2.5"
+        marker-end="url(#arrG)"/>
+  <line x1="1020" y1="366" x2="1135" y2="366" stroke="#57606a" stroke-width="2.5"/>
+  <text x="1077" y="385" text-anchor="middle" font-size="11" fill="#57606a">pin 5</text>
+
+</svg>
