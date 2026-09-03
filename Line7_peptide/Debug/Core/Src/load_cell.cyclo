@@ -1,0 +1,2 @@
+../Core/Src/load_cell.c:13:13:LoadCellComputeCRC	4
+../Core/Src/load_cell.c:41:6:LoadCellReadTest	6
