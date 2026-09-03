@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 450" width="1060" height="450" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+
+  <defs>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f6feb"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a7f37"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1060" height="450" fill="#ffffff"/>
+
+  <!-- ===== Title ===== -->
+  <text x="530" y="40" text-anchor="middle" font-size="23" font-weight="600" fill="#101418">
+    Fmoc UV Detector &#8212; direct to PC via USB&#8211;RS232 converter
+  </text>
+  <text x="530" y="66" text-anchor="middle" font-size="14" fill="#57606a">
+    19200 baud &#183; 8 data bits &#183; no parity &#183; 1 stop bit &#183; no flow control
+  </text>
+
+  <!-- ================= PC ================= -->
+  <rect x="40" y="110" width="250" height="300" rx="10"
+        fill="#eef3fb" stroke="#1f3d5c" stroke-width="2"/>
+  <text x="165" y="145" text-anchor="middle" font-size="17" font-weight="600" fill="#101418">PC / Laptop</text>
+  <text x="165" y="167" text-anchor="middle" font-size="13" fill="#57606a">Windows</text>
+  <line x1="60" y1="182" x2="270" y2="182" stroke="#c2ccd6" stroke-width="1"/>
+
+  <rect x="62" y="196" width="206" height="86" rx="6"
+        fill="#ffffff" stroke="#9db4cc" stroke-width="1"/>
+  <text x="165" y="218" text-anchor="middle" font-size="14" font-weight="600" fill="#101418">Termite</text>
+  <text x="165" y="238" text-anchor="middle" font-size="12" fill="#57606a">serial terminal</text>
+  <text x="165" y="258" text-anchor="middle" font-size="12" fill="#24292f">type: GA</text>
+  <text x="165" y="274" text-anchor="middle" font-size="12" fill="#24292f">append: CR-LF</text>
+
+  <text x="165" y="308" text-anchor="middle" font-size="12" fill="#57606a">VCP driver (FTDI / CH340)</text>
+  <text x="165" y="330" text-anchor="middle" font-size="13" font-weight="600" fill="#101418">COM port</text>
+
+  <text x="270" y="374" text-anchor="end" font-size="14" font-weight="600" fill="#101418">USB port</text>
+  <circle cx="290" cy="369" r="4" fill="#1f6feb"/>
+
+  <!-- ================= USB-RS232 converter ================= -->
+  <rect x="405" y="110" width="250" height="300" rx="10"
+        fill="#f3f0fb" stroke="#4c3d7a" stroke-width="2"/>
+  <text x="530" y="145" text-anchor="middle" font-size="17" font-weight="600" fill="#101418">USB &#8211; RS232 converter</text>
+  <text x="530" y="167" text-anchor="middle" font-size="13" fill="#57606a">cable with built-in transceiver</text>
+  <line x1="425" y1="182" x2="635" y2="182" stroke="#c2ccd6" stroke-width="1"/>
+
+  <text x="530" y="212" text-anchor="middle" font-size="13" fill="#24292f">USB &#8596; serial bridge chip</text>
+  <text x="530" y="234" text-anchor="middle" font-size="13" fill="#24292f">RS232 line driver (&#177;12 V)</text>
+
+  <text x="425" y="374" font-size="14" font-weight="600" fill="#101418">USB-A plug</text>
+  <circle cx="405" cy="369" r="4" fill="#1f6feb"/>
+
+  <!-- RS232 side labels (right edge) -->
+  <text x="635" y="279" text-anchor="end" font-size="13" fill="#101418">DB9 pin 3  TX out</text>
+  <text x="635" y="319" text-anchor="end" font-size="13" fill="#101418">DB9 pin 2  RX in</text>
+  <text x="635" y="359" text-anchor="end" font-size="13" fill="#101418">DB9 pin 5  GND</text>
+
+  <circle cx="655" cy="274" r="4" fill="#1f6feb"/>
+  <circle cx="655" cy="314" r="4" fill="#1a7f37"/>
+  <circle cx="655" cy="354" r="4" fill="#57606a"/>
+
+  <!-- ================= Detector ================= -->
+  <rect x="770" y="110" width="250" height="300" rx="10"
+        fill="#eefaf1" stroke="#1a5c33" stroke-width="2"/>
+  <text x="895" y="145" text-anchor="middle" font-size="17" font-weight="600" fill="#101418">Fmoc UV Detector</text>
+  <text x="895" y="167" text-anchor="middle" font-size="13" fill="#57606a">Vapourtec &#183; DB9 RS232</text>
+  <line x1="790" y1="182" x2="1000" y2="182" stroke="#c2ccd6" stroke-width="1"/>
+
+  <text x="790" y="279" font-size="13" fill="#101418">RX in   (pin 3)</text>
+  <text x="790" y="319" font-size="13" fill="#101418">TX out  (pin 2)</text>
+  <text x="790" y="359" font-size="13" fill="#101418">GND     (pin 5)</text>
+
+  <circle cx="770" cy="274" r="4" fill="#1f6feb"/>
+  <circle cx="770" cy="314" r="4" fill="#1a7f37"/>
+  <circle cx="770" cy="354" r="4" fill="#57606a"/>
+
+  <text x="895" y="212" text-anchor="middle" font-size="12" fill="#57606a">
+    command in:  &#8220;GA&#8221; + CR LF
+  </text>
+  <text x="895" y="234" text-anchor="middle" font-size="12" fill="#57606a">
+    reply out:  365AU, 460AU, TEMP
+  </text>
+
+  <!-- ================= PC <-> converter (USB) ================= -->
+  <rect x="295" y="336" width="105" height="66" rx="6"
+        fill="#fafbfc" stroke="#c2ccd6" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="347" y="354" text-anchor="middle" font-size="11" fill="#57606a">USB cable</text>
+
+  <line x1="290" y1="369" x2="405" y2="369" stroke="#1f6feb" stroke-width="3"/>
+  <text x="347" y="392" text-anchor="middle" font-size="11" fill="#57606a">data + 5 V</text>
+
+  <!-- ================= converter <-> detector (RS232) ================= -->
+  <rect x="660" y="240" width="105" height="140" rx="6"
+        fill="#fafbfc" stroke="#c2ccd6" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="712" y="258" text-anchor="middle" font-size="11" fill="#57606a">RS232 cable</text>
+
+  <line x1="655" y1="274" x2="770" y2="274" stroke="#1f6feb" stroke-width="2.5"
+        marker-end="url(#arrB)"/>
+  <line x1="770" y1="314" x2="655" y2="314" stroke="#1a7f37" stroke-width="2.5"
+        marker-end="url(#arrG)"/>
+  <line x1="655" y1="354" x2="770" y2="354" stroke="#57606a" stroke-width="2.5"/>
+  <text x="712" y="373" text-anchor="middle" font-size="11" fill="#57606a">pin 5</text>
+
+</svg>
